@@ -17,7 +17,7 @@ from time import time
 from sklearn.metrics import f1_score, accuracy_score
 
 
-def distribution(data, transformed = False):
+def distribution(data, transformed = False, features=['capital-gain','capital-loss']):
     """
     Visualization code for displaying skewed distributions of features
     """
@@ -26,7 +26,7 @@ def distribution(data, transformed = False):
     fig = pl.figure(figsize = (11,5));
 
     # Skewed feature plotting
-    for i, feature in enumerate(['capital-gain','capital-loss']):
+    for i, feature in enumerate(features):
         ax = fig.add_subplot(1, 2, i+1)
         ax.hist(data[feature], bins = 25, color = '#00A0A0')
         ax.set_title("'%s' Feature Distribution"%(feature), fontsize = 14)
