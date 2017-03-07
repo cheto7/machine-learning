@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>finding_donors</title>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>finding_donors</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11792,7 +11790,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11894,7 +11892,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Total number of records</span>
@@ -11907,7 +11905,7 @@ div#notebook {
 <span class="n">n_at_most_50k</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;income&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;&lt;=50K&#39;</span><span class="p">])</span>
 
 <span class="c1"># TODO: Percentage of individuals whose income is more than $50,000</span>
-<span class="n">greater_percent</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">n_greater_50k</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span> <span class="o">/</span> <span class="n">n_records</span>
+<span class="n">greater_percent</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">n_greater_50k</span><span class="p">)</span> <span class="o">/</span> <span class="n">n_records</span>
 
 <span class="c1"># Print the results</span>
 <span class="k">print</span> <span class="s2">&quot;Total number of records: {}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n_records</span><span class="p">)</span>
@@ -11929,7 +11927,7 @@ div#notebook {
 <pre>Total number of records: 45222
 Individuals making more than $50,000: 11208
 Individuals making at most $50,000: 34014
-Percentage of individuals making more than $50,000: 24.78%
+Percentage of individuals making more than $50,000: 0.25%
 </pre>
 </div>
 </div>
@@ -13410,8 +13408,8 @@ $$ F_{\beta} = (1 + \beta^2) \cdot \frac{precision \cdot recall}{\left( \beta^2 
 <p>Support Vector Machines:</p>
 <ul>
 <li>One implementation of this model is to "Prediction of common diseases: the case of diabetes and pre-diabetes" as we see in the following link: <a href="http://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/1472-6947-10-16">http://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/1472-6947-10-16</a></li>
-<li>This model runs well on cases where there is a small amount of data. It also performs well when there a high number of features compared to the number of examples. Handles high dimentional data well.</li>
-<li>The fit time complexity is more than quadratic with the number of samples which makes it hard to scale to dataset with more than a couple of 10000 samples.</li>
+<li>This model runs well on cases where there is a small amount of data. It also performs well when there are more features than examples. Handles high dimentional data well.</li>
+<li>Its susceptible to overfitting depending on the kernel that is used.</li>
 <li>It seems that it is a good candidate for this problem because we have a small amount of data (~45000 examples). It is also a good candidate based on the high number of features we have (14 raw features).</li>
 </ul>
 <p>Gaussian Naive Bayes:</p>
@@ -13419,14 +13417,14 @@ $$ F_{\beta} = (1 + \beta^2) \cdot \frac{precision \cdot recall}{\left( \beta^2 
 <li>This model is most known for its use on text categorization. You could see it's characteristics on: <a href="https://en.wikipedia.org/wiki/Naive_Bayes_classifier">https://en.wikipedia.org/wiki/Naive_Bayes_classifier</a></li>
 <li>This model runs well on cases where there is a small amount of data. It also performs well when there are a lot of features. It algorithm tend to have a good efficiency on training over large datasets.</li>
 <li>It makes a very strong assumption on the independence among features. Due to this, the result could be potentially very bad.</li>
-<li>Based on the small amount of data we have (~45000 examples) and the high dimentionality of it. Althought It is not an text analysis It could have a good performance in this problem, that is why I would like to see this algorithm in action.</li>
+<li>Based on the small amount of data we have (~45000 examples) and the high dimentionality of it. Althought It is not an text analysis It could have a good performance in this problem.</li>
 </ul>
 <p>Random Forest:</p>
 <ul>
 <li>One implementation of this algorithm in the real-world is in "Tumor classification" as we se in the following link: <a href="http://www.nature.com/modpathol/journal/v18/n4/full/3800322a.html">http://www.nature.com/modpathol/journal/v18/n4/full/3800322a.html</a> . In this case there are using a variation for unsupervised learning.</li>
-<li>This model runs efficiently on large datasets and have a good performance when there is a small amount of data. </li>
+<li>This model runs efficiently on large datasets and maintain accuracy when large amount of data is missing. </li>
 <li>This model doesn't perform well on noisy data as it tend to overfit in those cases. Also, the output tend to be biased by the  attributes with the bigger amount of levels.</li>
-<li>This model is a good candidate because it performs well with small amount of data (our case ~45000). This model has a good time performance with high amount of features as in our case.</li>
+<li>This model is a good candidate because it performs well with small amount of data (our case ~45000). </li>
 </ul>
 
 </div>
@@ -14789,7 +14787,7 @@ B4ox+QpI5/WaAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> This models works by iterating over the following steps: <br>1- select a random subsets of the features to work with. <br>2- Select a random subset of the training dataset by piking-with-replacement to work with. <br>3- Using the previous subsets of features and training data, find a decision tree classifier that fits it. <br>4- Iterate N times.<br>Later, to predict it performs a voting or average over the outcome of all the decision trees, keeping the most popular option.</p>
+<p><strong>Answer: </strong> This models works by selecting several subsets of the dataset and find for each one a decision tree classifier that fits the subset. Later, to predict it performs a voting on the outcome of all the decision trees, keeping the most popular option.</p>
 
 </div>
 </div>
@@ -15594,7 +15592,7 @@ RK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> The features I said in the question 6 are not similar to those shown in the graph. I think the features said by the graph are those that better disperse the data, this way it could get many groups with few data. This way when you try to predict a specific values it just look for the group it belongs to and have a better prediction. The features I said where encoded, so each feature has only two values, it made that each feature has only two values (true or false) so it hasn't the power to disperse the data as it were before. So, in synthesis, the feature when was encoded divided its importance in several features. That's why those features where not as important as it should and there would not at the top five features (although one value of one feature I said was there).</p>
+<p><strong>Answer:</strong> The features I said in the question 6 are not similar to those shown in the graph. I think the features said by the graph are those that better disperse the data, this way it could get many groups with few data. This way when you try to predict a specific values it just look for the group it belongs to and have a better prediction.</p>
 
 </div>
 </div>
@@ -15699,4 +15697,8 @@ F-score on testing data: 0.6318
     </div>
   </div>
 </body>
+
+ 
+
+
 </html>
