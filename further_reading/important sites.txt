@@ -1,0 +1,14 @@
+Understanding ML algorithms
+https://rayli.net/blog/data/top-10-data-mining-algorithms-in-plain-english/
+
+Choosing the right estimator
+http://scikit-learn.org/stable/tutorial/machine_learning_map/
+
+Example of ML and DataAnalysis notebook 
+http://nbviewer.jupyter.org/github/rhiever/Data-Analysis-and-Machine-Learning-Projects/blob/master/example-data-science-notebook/Example%20Machine%20Learning%20Notebook.ipynb
+
+Python ML examples
+https://github.com/rasbt/python-machine-learning-book
+
+MLND wiki
+https://github.com/machinelearningnanodegree/MLND/wiki
