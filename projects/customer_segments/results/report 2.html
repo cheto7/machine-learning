@@ -11780,7 +11780,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11824,7 +11824,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -11838,7 +11838,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[2]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -11924,7 +11924,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display a description of the dataset</span>
@@ -12051,7 +12051,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Select three indices of your choice you wish to sample from the dataset</span>
@@ -12180,7 +12180,7 @@ The customer 2 has all the categories amounts under the 25th percentile, except 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -12262,7 +12262,7 @@ The customer 2 has all the categories amounts under the 25th percentile, except 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Produce a scatter matrix for each pair of features in the data</span>
@@ -14846,7 +14846,7 @@ KIqSMv8fleE3z1y+k70AAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Scale the data using the natural logarithm</span>
@@ -20456,7 +20456,7 @@ oiiKoiiKomQB2sijKIqiKIqiKIqiKIqSBfx/ntL30or4NpYAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the log-transformed sample data</span>
@@ -20547,7 +20547,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># For each feature find the data points with extreme high or low values</span>
@@ -20567,7 +20567,7 @@ Once you have performed this implementation, the dataset will be stored in the v
     <span class="n">display</span><span class="p">(</span><span class="n">log_data</span><span class="p">[</span><span class="o">~</span><span class="p">((</span><span class="n">log_data</span><span class="p">[</span><span class="n">feature</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">Q1</span> <span class="o">-</span> <span class="n">step</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">log_data</span><span class="p">[</span><span class="n">feature</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">Q3</span> <span class="o">+</span> <span class="n">step</span><span class="p">))])</span>
     
 <span class="c1"># OPTIONAL: Select the indices for data points you wish to remove</span>
-<span class="n">outliers</span>  <span class="o">=</span> <span class="p">[]</span>    
+<span class="n">outliers</span>  <span class="o">=</span> <span class="p">[]</span>                         
                           
 <span class="c1"># Remove the outliers, if any were specified</span>
 <span class="n">good_data</span> <span class="o">=</span> <span class="n">log_data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">log_data</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">outliers</span><span class="p">])</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
@@ -21218,7 +21218,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> Yes, there are points considered outliers for more than one feature as 65, 66, 75, 128 and 154. No, althought the outliers are points which values not represent the normal behavior of the poblation of points, considered abnormal values, these values could be real or special values. So, we need to manage these kind of special values. There are some cases where this kind of values need to be removed but these are cases where the data could be corrupt, be human error or has many noise. In this case I prefer to conserve the outliers, as these don't seem to be too much extreme values and can't certantly know whether they are special cases or corrupt data so I would treat it as simple special cases.</p>
+<p><strong>Answer:</strong> Yes, there are points considered outliers for more than one feature as 65, 75 and 154. No, althought the outliers are points which values not represent the normal behavior of the poblation of points, considered abnormal values, these values could be real or special values. So, we need to manage these kind of special values. There are some cases where this kind of values need to be removed but these are cases where the data could be corrupt, be human error or has many noise. In this case I prefer to conserve the outliers, as these don't seem to be too much extreme values and can't certantly know whether they are special cases or corrupt data so I would treat it as simple special cases.</p>
 
 </div>
 </div>
@@ -25167,7 +25167,7 @@ AAAAQMcJiAAAAAA67v8H7RPRNkhpZNYAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> A customer assigned to Cluster 0 should best identify with the establishments represented by the feature set of Segment 0, as this segment aims to customers that have Milk, Grocery and Detergents_Paper amounts over its feature mean, meanwhile Fresh, Frozen and Delicatessen are far below its feature mean. We could suppose this cluster is for retailers. By the other hand, a custumer assigned to Cluster 1 should represent the features of Segment 1, as this segment aims to customers who have Milk, Grocery and Detergents_Paper amounts far below its feature mean, and have Fresh, Frozen and Delicatessen amounts higher than segment 0 (but the mean is still below the feature mean). We could assume this cluster is for restaurants and cafes.</p>
+<p><strong>Answer:</strong> A customer assigned to Cluster 0 should best identify with the establishments represented by the feature set of Segment 0, as this segment aims to customers that have Milk, Grocery and Detergents_Paper amounts over its feature mean, meanwhile Fresh, Frozen and Delicatessen are far below its feature mean. By the other hand, a custumer assigned to Cluster 1 should represent the features of Segment 1, as this segment aims to customers who have Milk, Grocery and Detergents_Paper amounts far below its feature mean, and have Fresh, Frozen and Delicatessen amounts higher than segment 0 (but the mean is still below the feature mean).</p>
 
 </div>
 </div>
