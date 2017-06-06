@@ -12,3 +12,13 @@ https://github.com/rasbt/python-machine-learning-book
 
 MLND wiki
 https://github.com/machinelearningnanodegree/MLND/wiki
+
+
+Gradient Descent
+https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/gradient-and-directional-derivatives/v/gradient
+
+Momentum
+http://sebastianruder.com/optimizing-gradient-descent/index.html#momentum
+
+Backpropagation (video)
+https://youtu.be/MZL97-2joxQ
