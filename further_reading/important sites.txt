@@ -20,5 +20,11 @@ https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivative
 Momentum
 http://sebastianruder.com/optimizing-gradient-descent/index.html#momentum
 
-Backpropagation (video)
+Backpropagation
 https://youtu.be/MZL97-2joxQ
+https://medium.com/@karpathy/yes-you-should-understand-backprop-e2f06eab496b
+https://www.youtube.com/watch?v=59Hbtz7XgjM
+
+Convolutional Neural Network
+https://adeshpande3.github.io/A-Beginner%27s-Guide-To-Understanding-Convolutional-Neural-Networks-Part-2/
+https://stats.stackexchange.com/questions/260389/what-is-the-difference-between-same-and-half-border-mode-in-convolutional-ne
